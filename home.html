@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Carvan</title>
+</head>
+<body>
+<div class="container-fluid">
+    <!----logo+bar---------->
+    <div class="logo+bar">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)"><img src="img/logo/logo.png" alt="" style="height: 50px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar" >
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">About US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Brands</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Range of Cars</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Pre-owred car</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Contact US</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <br>
+    <!---------Silde----------->
+    <div class="slide">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/car/toyota-cuv-alphard.png" alt="" class="d-block w-100 ">
+              </div>
+              <div class="carousel-item">
+                <img src="img/car/toyota-pickup-hilux.png" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/car/toyota-suv-land_prado.png" alt="" class="d-block w-100">
+              </div>
+            </div>
+          
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+    </div>
+    <br>
+<!---------list-logo-brands------------->
+    <div class="list-brands">
+        <div class="row" "><h3 style="text-align: center;">Brands</h3></div>
+        <div class="row">
+            <div class="col-sm-3"><a href="#"><img src="img/logo/Audi.png" alt=""></a></div>
+            <div class="col-sm-3"><a href="#"><img src="img/logo/BMW.png" alt=""></a></div>
+            <div class="col-sm-3"><a href="#"><img src="img/logo/Chevrolet.png" alt=""></a></div>
+            <div class="col-sm-3"><a href="#"><img src="img/logo/Ford.png" alt=""></a></div>
+            <div class="col-sm-3"><a href="#"><img src="img/logo/Honda.png" alt=""></a></div>
+            <div class="col-sm-3"><a href="#"><img src="img/logo/Toyota.png" alt=""></a></div>
+            <div class="col-sm-3"><a href="#"><img src="img/logo/Nissan.png" alt=""></a></div>
+        </div>
+    </div>
+<div class="content">
+    <div class="row">
+        <!---------filter-------------->
+        <div class="col-sm-3" id="filter">
+            <form action="submit" method="get">
+                <div class="cb-brand">
+                    <div style="margin-top: 10px;"><h5>Brands</h5></div>
+                    <br>
+                    <div class="row" id="cb-list">
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">All</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">BWM</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">Nissan</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">Ford</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">Toyota</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">Audi</div>
+                    </div>
+                    <div style="margin-top: 10px;"><h5>Ranger of cars</h5></div>
+                    <div class="row" id="cb-list">
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">All</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">SUV</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">CUV</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">Pick-up</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">Hatchback</div>
+                        <div class="col-sm-6"><input type="checkbox" name="" id="">Sedan</div>
+                    </div>
+                    <div style="margin-top: 10px;"><h5>Price</h5></div>
+                    <div class="row" id="cb-list">
+                        <div class="col-sm-12"><input type="checkbox" name="" id="">300M -> 600M</div>
+                        <div class="col-sm-12"><input type="checkbox" name="" id="">600M -> 1B</div>
+                        <div class="col-sm-12"><input type="checkbox" name="" id="">1B -> 1,5B</div>
+                        <div class="col-sm-12"><input type="checkbox" name="" id="">1,5B->2B</div>
+                        <div class="col-sm-12"><input type="checkbox" name="" id="">>2B</div>
+                    </div>
+                </div>
+                <div><input type="submit" value="Search"></div>
+            </form>
+        </div>
+        <!-----------list-product------------------->
+        <div class="col-sm-9" id="list-product">
+            <div class="row" >
+                <div class="col-sm-4">
+                    <div class="product">
+                        <div><img src="img/car/toyota-cuv-avanza_premio.jpg" alt="" style="width: 240px
+                        ;text-align: center;"></div>
+                        <div><a href="">Toyota Avanza Premio</a></div>
+                        <div>650.000.000VND</div>
+                        <div> <a href="">View deital</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+    <!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

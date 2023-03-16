@@ -1,0 +1,29 @@
+#mynavbar{
+    flex-grow: 0;
+    align-items: start;
+}
+.nav-item{
+    margin-right: 10px;
+}
+.list-brands{
+    border: 0.5px solid;
+}
+.col-sm-3 {
+    text-align: center;
+    margin-top: 15px;
+}
+#filter{
+    border: 0.5px solid;
+}
+#cb-list{
+    text-align: left;
+}
+.product{
+    border: 0.5px solid;
+    text-align: center;
+    margin-top: 15px;
+}
+#list-product{
+    border: 0.5px solid;
+    margin-top: 15px;
+}
